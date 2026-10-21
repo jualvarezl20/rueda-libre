@@ -3,12 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="wilih=device-wilih, initial-scale=1.0">
-    <title id="Tarifas">Reserva tú bicicleta</title>
+    <title id="Reservas">Reserva tú bicicleta</title>
 </head>
+
 <body>
 
-<a href="mailto:ruedalibre@gmail.com">Escríbenos</a>
+    <header>
+      <h1>RUEDA LIBRE</h1>
+      <img src="../img/logo.png" alt="Logo Rueda Libre" width="300">
+    </header>
 
-<h1>Horario de atención</h1>
+    <nav>
+        <h2>Menú</h2>
+            <ul>
+                <li><a href="../index.html#Inicio">Inicio</a></li>
+                <li><a href="tarifas.html#Tarifas">Tarifas</a></li>
+                <li><a href="tarifas.html#Rutas">Rutas</a></li>
+                <li><a href="#Reservas">Reservas</a></li>
+            </ul>
+    </nav>
+
+    <main>
+
+        <a href="mailto:ruedalibre@gmail.com">Escríbenos</a>
+
+        <h2>Horario de atención</h2>
+            <dl>
+                <dt>De lunes a viernes</dt>
+                <dd>7am a 7pm</dd>
+                <dt>Sabados, Domingos y Festivos</dt>
+                <dd>6am a 2pm</dd>
+            </dl>
+
+        <form action="=#" method="post">
+
+            <fieldset>
+                <legend>Tus datos</legend>
+
+                <p>
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </p>
+                    <label for="documento">Documento de identidad</label>
+                    <input type="number" id="documento" name="documento" required>
+                </p>
+                    <label for="correo">Correo electronico</label>
+                    <input type="email" id="correo" name="correo" required>
+                </p>
+                    <label for="telefono">Telefono de contacto</label>
+                    <input type="number" id="telefono" name="telefono" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Reserva</legend>
+
+                </p>
+                    <label for="fecha">Documento de identidad</label>
+                    <input type="date" id="fecha" name="fecha" required>
+
+
+            </fieldset>
+
+
+
+        </form>  
+    </main>
+
+    <footer>
+        <h4>Rueda LIbre</h4>
+        <h4>ruedalibre@gmail.com</h4>
+        <h4>2026</h4>
+    </footer>
+    </main>
+
 
 </body>
