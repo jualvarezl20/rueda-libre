@@ -11,5 +11,19 @@ CSS:Estilo tipo colores y demás.
 JavaScrip: Funcionalidades.
 
 
+Clasificación de colores
+
+COLOR TEXTO     COLOR FONDO     CONTRASTE   CLASIFICACIÓN
+
+  Blanco        Verde ruta       5.31:1       APRUEBA
+  lanco         Naranja pedal    3.87:1   SOLO TEXTO GRANDE
+  Azul noche    Naranja pedal    1.85:1      NO APRUEBA
+  Azul noche      Crema          7.97:1       APRUEBA
+  Gris asfalto    Crema ruta     5.56:1       APRUEBA
+  Verde ruta      Crema          4.93:1       APRUEBA
+  Naranja pedal   Crema          2.05:1      NO APRUEBA
+  Blanco        Azul noche      15.97:1       APRUEBA
+
+
 
 

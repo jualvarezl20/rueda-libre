@@ -42,31 +42,95 @@
 
                 <p>
                     <label for="nombre">Nombre Completo</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                    <input type="text" id="nombre" name="nombre" minlength="3" title="Debe contener mínimo 3 caracteres" required>
                 </p>
+                <p>
                     <label for="documento">Documento de identidad</label>
-                    <input type="number" id="documento" name="documento" required>
+                    <input 
+                        type="number" 
+                        id="documento" 
+                        name="documento" 
+                        pattern="[0-9]{6,10}" 
+                        title="Debe contener 6 a 10 digitos"
+                        required>
                 </p>
+                <p>
                     <label for="correo">Correo electronico</label>
                     <input type="email" id="correo" name="correo" required>
                 </p>
+                <p>
                     <label for="telefono">Telefono de contacto</label>
-                    <input type="number" id="telefono" name="telefono" required>
+                    <input 
+                    type="number" 
+                    id="telefono" 
+                    name="telefono" 
+                    title="Debe contener 10 digitos" 
+                    min="3" 
+                    pattern="3[0-9]{9}" 
+                    required>
                 </p>
             </fieldset>
 
             <fieldset>
                 <legend>Reserva</legend>
 
-                </p>
-                    <label for="fecha">Documento de identidad</label>
-                    <input type="date" id="fecha" name="fecha" required>
+                    <p>
+                        <label for="fecha">Fecha de reserva</label>
+                        <input type="date" id="fecha" name="fecha" min="2026-11-01" max="2026-12-31" required>
+                    </p>
 
+                    <p>
+                    <select id="bicicleta" name="bicicleta" required>
+                        <option value="">Seleccione una bicicleta</option>
+                        <option value="urbana">Urbana</option>
+                        <option value="montaña">Montaña</option>
+                        <option value="electrica">Eléctrica</option>
+                    </select>
+                    </p>
+                    
+                    <p>
+                    <select id="plan" name="plan" required>
+                        <option value="">Seleccione un plan</option>
+                        <option value="plan1">1 hora</option>
+                        <option value="plan2">Medio día</option>
+                        <option value="plan3">Día completo</option>
+                    </select>
+                    </p>
+                
+                    <p>
+                        <label for="nbicicletas">Número de bicicletas</label>
+                        <input type="number" id="nbicicletas" name="nbicicletas" min="1" max="6" required>
+                    </p>
 
+                    <p>
+                    <select id="recorrido" name="recorrido" required>
+                        <option value="">Seleccione un recorrido</option>
+                        <option value="sinrecorrido">Sin recorrido</option>
+                        <option value="recorrido1">Ríos y parques</option>
+                        <option value="recorrido2">Sabores de barrio</option>
+                        <option value="recorrido3">Reto las palmas</option>
+                    </select> 
+                    </p>
+
+                    <p>
+                        <label for="comentarios">Deja tú comentario</label>
+                        <p>
+                        </p>
+                        <textarea id="comentarios" name="comentarios" rows="4" cols="50" minlenght="10" maxlength="300" placeholder="Comentarios adicionales"></textarea>
+                    </p>
             </fieldset>
 
+            <fieldset>
+                <legend>Política de privacidad</legend>
+                <p>
+                    <input type="checkbox" id="privacidad" name="privacidad" required>
+                    <label for="privacidad">Acepto la política de privacidad</label>
+                </p>
+            </fieldset>
 
-
+            <p>
+                <button type="submit">Enviar reserva</button>
+            </p>
         </form>  
     </main>
 
