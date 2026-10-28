@@ -1,0 +1,35 @@
+:root {
+    --verde-ruta:#1E7A4F;
+    --naranja-pedal:#F39A2B;
+    --azul-noche:#14213D;
+    --crema:#FAF6EF;
+    --gris-asfalto:#5B6470;
+
+    --espacio1:0.5rem;
+    --espacio2:1rem;
+    --espacio3:3rem;
+
+    --fuente-titulos:Montserrat, sans-serif;
+    --fuente-texto:"Open Sans",sans-serif;
+}
+
+body {
+    background-color: var(--crema);
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--azul-noche);
+    font-family: var(--fuente-titulos);
+}
+
+p{
+    color: var(--azul-noche);
+    font-family: var(--fuente-texto);
+}
+
+#menu a { 
+    color: var(--gris-asfalto); 
+}
+.activo { 
+    color: var(--verde-ruta); font-weight: 600; 
+}
