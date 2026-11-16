@@ -10,7 +10,6 @@ HTML:formato y elementos.
 CSS:Estilo tipo colores y demás.
 JavaScrip: Funcionalidades.
 
-
 Clasificación de colores
 
 COLOR TEXTO     COLOR FONDO     CONTRASTE   CLASIFICACIÓN
