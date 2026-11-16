@@ -9,22 +9,18 @@
     --espacio2:1rem;
     --espacio3:3rem;
 
-    --fuente-titulos:Montserrat, sans-serif;
-    --fuente-texto:"Open Sans",sans-serif;
+    --fuente-titulos:Montserrat, Arial, sans-serif;
+    --fuente-texto:"Open Sans", Arial, sans-serif;
 }
 
 body {
+    font-family: var(--fuente-texto);
+    color: var(--azul-noche);
     background-color: var(--crema);
 }
 
-h1,h2,h3,h4,h5,h6{
-    color: var(--azul-noche);
+h1,h2,h3,h4,h5,h6 {
     font-family: var(--fuente-titulos);
-}
-
-p{
-    color: var(--azul-noche);
-    font-family: var(--fuente-texto);
 }
 
 #menu a { 

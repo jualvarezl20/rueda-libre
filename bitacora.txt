@@ -24,5 +24,5 @@ COLOR TEXTO     COLOR FONDO     CONTRASTE   CLASIFICACIÓN
   Blanco        Azul noche      15.97:1       APRUEBA
 
 
-
+Herencia: El párrafo no copia el fondo crema del body, por lo cual sale transparente.
 
