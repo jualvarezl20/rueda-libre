@@ -26,3 +26,6 @@ COLOR TEXTO     COLOR FONDO     CONTRASTE   CLASIFICACIÓN
 
 Herencia: El párrafo no copia el fondo crema del body, por lo cual sale transparente.
 
+El menu a tiene especificidad 1-0-1 (un id y un elemento).
+.activo tiene especificidad 0-1-0 (una clase).
+El id pesa más que la clase, por eso el enlace activo seguía gris y la clase no se aplicaba.

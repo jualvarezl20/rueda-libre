@@ -4,6 +4,7 @@
     --azul-noche:#14213D;
     --crema:#FAF6EF;
     --gris-asfalto:#5B6470;
+    --blanco:#FFFFFF;
 
     --espacio1:0.5rem;
     --espacio2:1rem;
@@ -23,9 +24,66 @@ h1,h2,h3,h4,h5,h6 {
     font-family: var(--fuente-titulos);
 }
 
-#menu a { 
-    color: var(--gris-asfalto); 
+a {
+    color: var(--verde-ruta);
 }
-.activo { 
-    color: var(--verde-ruta); font-weight: 600; 
+
+a:hover,
+a:focus {
+    color: var(--azul-noche);
+}
+
+#menu a {
+    display: inline-block;
+    color: var(--gris-asfalto);
+    text-decoration: none;
+    padding: var(--espacio1) var(--espacio2);
+}
+
+#menu a.activo {
+    color: var(--verde-ruta);
+    font-weight: 500;
+}
+
+#menu a:hover,
+#menu a:focus {
+    background-color: var(--verde-ruta);
+    color: var(--blanco);
+}
+
+#menu a:focus {
+    outline: 3px solid var(--azul-noche);
+    outline-offset: 2px;
+}git add .
+
+.botonreserva,
+button {
+    display: inline-block;
+    background-color: var(--verde-ruta);
+    color: var(--blanco);
+    padding: var(--espacio1) var(--espacio2);
+    border: none;
+    border-radius: 0.25rem;
+    font-family: var(--fuente-texto);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.botonreserva:hover,
+.botonreserva:focus,
+button:hover,
+button:focus {
+    background-color: var(--azul-noche);
+    color: var(--blanco);
+    outline: 3px solid var(--azul-noche);
+    outline-offset: 2px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid var(--azul-noche);
+    outline-offset: 2px;
+    background-color: var(--blanco);
 }
