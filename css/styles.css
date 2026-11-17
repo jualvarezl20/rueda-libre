@@ -134,6 +134,23 @@ footer {
     font-weight: 600;
 }
 
+.flota {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: var(--espacio2);
+}
+
+.flota .tarjeta {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.flota .botonreserva {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
 table {
     width: 100%;
     margin-bottom: var(--espacio2);

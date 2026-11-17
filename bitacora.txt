@@ -32,3 +32,7 @@ El id pesa más que la clase, por eso el enlace activo seguía gris y la clase n
 
 
 Al estrechar la ventana el encabezado junto con el menu y demas objetos se osan debajo del otro, al igual que el pie de pagina.
+
+Columnas de la flota a 1280 px: 3
+Columnas de la flota a 900 px: 3
+Columnas de la flota a 500 px:  1
