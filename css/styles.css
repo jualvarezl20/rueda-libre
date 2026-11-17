@@ -1,3 +1,4 @@
+
 :root {
     --verde-ruta:#1E7A4F;
     --naranja-pedal:#F39A2B;
@@ -14,6 +15,8 @@
     --fuente-texto:"Open Sans", Arial, sans-serif;
 }
 
+
+*,
 *::before,
 *::after {
     box-sizing: border-box;
@@ -49,13 +52,39 @@ a:focus {
     color: var(--azul-noche);
 }
 
-#menu {
-    padding: 0;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--espacio2);
+    padding: var(--espacio2);
 }
 
-#menu li {
-    display: inline-block;
-    margin-right: var(--espacio2);
+.marca {
+    display: flex;
+    align-items: center;
+    gap: var(--espacio2);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: var(--espacio2);
+    padding: var(--espacio2);
+}
+
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espacio2);
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 #menu a {
@@ -79,6 +108,7 @@ a:focus {
 #menu a:focus {
     outline: 3px solid var(--azul-noche);
 }
+
 
 .tarjeta {
     position: relative;
@@ -156,7 +186,7 @@ button:focus {
     right: var(--espacio2);
 }
 
-/* FORMULARIO */
+
 fieldset {
     margin-bottom: var(--espacio2);
     padding: var(--espacio2);
