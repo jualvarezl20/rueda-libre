@@ -1,3 +1,4 @@
+/* VARIABLES */
 :root {
     --verde-ruta:#1E7A4F;
     --naranja-pedal:#F39A2B;
@@ -14,8 +15,6 @@
     --fuente-texto:"Open Sans", Arial, sans-serif;
 }
 
-
-*,
 *::before,
 *::after {
     box-sizing: border-box;
@@ -37,10 +36,8 @@ img {
     height: auto;
 }
 
-main {
-    max-width: 60rem;
-    margin: 0 auto;
-    padding: var(--espacio2);
+.portada {
+    min-height: 60vh;
 }
 
 a {
@@ -51,7 +48,6 @@ a:hover,
 a:focus {
     color: var(--azul-noche);
 }
-
 
 header {
     display: flex;
@@ -106,21 +102,9 @@ footer {
     outline: 3px solid var(--azul-noche);
 }
 
-/* PORTADA */
-.portada {
-    display: grid;
-    gap: var(--espacio2);
-}
-
-.portada img {
-    border-radius: 0.5rem;
-}
-
-
 .tarjeta {
     position: relative;
     padding: var(--espacio2);
-    margin-bottom: var(--espacio2);
     border: 1px solid var(--gris-asfalto);
     border-radius: 0.5rem;
 }
@@ -139,32 +123,6 @@ footer {
     color: var(--blanco);
     border-radius: 0.25rem;
     font-weight: 600;
-}
-
-.flota {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: var(--espacio2);
-}
-
-.flota .tarjeta {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0;
-}
-
-.flota .botonreserva {
-    margin-top: auto;
-    align-self: flex-start;
-}
-
-.rutas {
-    display: grid;
-    gap: var(--espacio2);
-}
-
-.rutas .tarjeta {
-    margin-bottom: 0;
 }
 
 table {
@@ -257,6 +215,7 @@ label {
     flex-direction: column;
 }
 
+
 @media (min-width: 768px) {
     header {
         flex-direction: row;
@@ -272,17 +231,6 @@ label {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-    }
-
-    .portada {
-        grid-template-columns: 1fr 1fr;
-        gap: var(--espacio3);
-        align-items: center;
-        min-height: 60vh;
-    }
-
-    .rutas {
-        grid-template-columns: repeat(3, 1fr);
     }
 
     table {
@@ -307,10 +255,6 @@ label {
 @media (min-width: 1200px) {
     .reservas {
         grid-template-columns: 2fr 1fr;
-        gap: var(--espacio3);
-    }
-
-    .rutas {
         gap: var(--espacio3);
     }
 }

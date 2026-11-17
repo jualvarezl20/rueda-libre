@@ -44,3 +44,9 @@ Reservas: usé Grid porque el formulario y el contacto van en proporción 2:1 co
 Fila del formulario: usé Flexbox porque son solo dos campos en una línea.
 Encabezado: usé Flexbox porque solo reparte el nombre y el menú en una fila.
 Pie: usé Flexbox porque reparte tres bloques en una fila.
+
+Semana 2, MiniReto 7: conflictos con Bootstrap
+
+Conflicto 1: Bootstrap define la fuente del body y la hoja la cambia y  el styles.css se carga después de Bootstrap y gana, la declaración de Bootstrap sale tachada en DevTools.
+Conflicto 2: Bootstrap pone color y subrayado a los enlaces.
+Conflicto 3: La regla main tenía max-width y margin, pero la clase container de Bootstrap la tachaba.
