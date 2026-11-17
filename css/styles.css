@@ -14,7 +14,6 @@
     --fuente-texto:"Open Sans", Arial, sans-serif;
 }
 
-*,
 *::before,
 *::after {
     box-sizing: border-box;
@@ -24,6 +23,7 @@ body {
     font-family: var(--fuente-texto);
     color: var(--azul-noche);
     background-color: var(--crema);
+    padding-bottom: calc(var(--espacio3) * 2);
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -59,6 +59,7 @@ a:focus {
 }
 
 #menu a {
+    display: inline-block;
     color: var(--gris-asfalto);
     text-decoration: none;
     padding: var(--espacio1) var(--espacio2);
@@ -73,11 +74,14 @@ a:focus {
 #menu a:focus {
     background-color: var(--verde-ruta);
     color: var(--blanco);
+}
+
+#menu a:focus {
     outline: 3px solid var(--azul-noche);
-    outline-offset: 2px;
 }
 
 .tarjeta {
+    position: relative;
     padding: var(--espacio2);
     margin-bottom: var(--espacio2);
     border: 1px solid var(--gris-asfalto);
@@ -89,9 +93,19 @@ a:focus {
     height: auto;
 }
 
+.etiqueta {
+    position: absolute;
+    top: var(--espacio1);
+    right: var(--espacio1);
+    padding: 0.25rem var(--espacio1);
+    background-color: var(--verde-ruta);
+    color: var(--blanco);
+    border-radius: 0.25rem;
+    font-weight: 600;
+}
+
 table {
     width: 100%;
-    border-collapse: collapse;
     margin-bottom: var(--espacio2);
 }
 
@@ -99,7 +113,6 @@ th,
 td {
     padding: var(--espacio1) var(--espacio2);
     border: 1px solid var(--gris-asfalto);
-    text-align: left;
 }
 
 th {
@@ -107,6 +120,43 @@ th {
     color: var(--blanco);
 }
 
+.botonreserva,
+.whatsapp,
+button {
+    display: inline-block;
+    background-color: var(--verde-ruta);
+    color: var(--blanco);
+    padding: var(--espacio1) var(--espacio2);
+    border: none;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-family: var(--fuente-texto);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+button {
+    padding: var(--espacio2) var(--espacio3);
+}
+
+.botonreserva:hover,
+.botonreserva:focus,
+.whatsapp:hover,
+.whatsapp:focus,
+button:hover,
+button:focus {
+    background-color: var(--azul-noche);
+    color: var(--blanco);
+    outline: 3px solid var(--azul-noche);
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: var(--espacio2);
+    right: var(--espacio2);
+}
+
+/* FORMULARIO */
 fieldset {
     margin-bottom: var(--espacio2);
     padding: var(--espacio2);
@@ -124,50 +174,12 @@ label {
     margin-right: var(--espacio2);
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="date"],
-input[type="number"],
-select,
-textarea {
+.campo {
     width: 100%;
     padding: var(--espacio1);
 }
 
-input:focus,
-select:focus,
-textarea:focus {
+.campo:focus {
     outline: 3px solid var(--azul-noche);
-    outline-offset: 2px;
     background-color: var(--blanco);
-}
-
-.boton-cta,
-button {
-    display: inline-block;
-    background-color: var(--verde-ruta);
-    color: var(--blanco);
-    padding: var(--espacio1) var(--espacio2);
-    border: none;
-    border-radius: 0.25rem;
-    text-decoration: none;
-    font-family: var(--fuente-texto);
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-button {
-    padding: var(--espacio2) var(--espacio3);
-}
-
-.boton-cta:hover,
-.boton-cta:focus,
-button:hover,
-button:focus {
-    background-color: var(--azul-noche);
-    color: var(--blanco);
-    outline: 3px solid var(--azul-noche);
-    outline-offset: 2px;
 }

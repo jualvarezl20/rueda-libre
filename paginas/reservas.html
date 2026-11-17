@@ -17,9 +17,8 @@
     <header>
       <h1>RUEDA LIBRE</h1>
       <img src="../img/logo.png" alt="Logo Rueda Libre" width="300">
-    </header>
 
-    <nav>
+      <nav>
         <h2>Menú</h2>
             <ul id="menu">
                 <li><a href="../index.html#Inicio">Inicio</a></li>
@@ -27,7 +26,8 @@
                 <li><a href="tarifas.html#Rutas">Rutas</a></li>
                 <li><a class="activo" href="#Reservas">Reservas</a></li>
             </ul>
-    </nav>
+      </nav>
+    </header>
 
     <main>
 
@@ -51,19 +51,19 @@
 
                     <p>
                         <label for="nombre">Nombre Completo</label>
-                        <input type="text" id="nombre" name="nombre" minlength="3" title="Debe contener mínimo 3 caracteres" required>
+                        <input class="campo" type="text" id="nombre" name="nombre" minlength="3" title="Debe contener mínimo 3 caracteres" required>
                     </p>
                     <p>
                         <label for="documento">Documento de identidad</label>
-                        <input type="text" id="documento" name="documento" pattern="[0-9]{6,10}" title="Debe contener solo números, de 6 a 10 digitos" required>
+                        <input class="campo" type="text" id="documento" name="documento" pattern="[0-9]{6,10}" title="Debe contener solo números, de 6 a 10 digitos" required>
                     </p>
                     <p>
                         <label for="correo">Correo electronico</label>
-                        <input type="email" id="correo" name="correo" required>
+                        <input class="campo" type="email" id="correo" name="correo" required>
                     </p>
                     <p>
                         <label for="telefono">Telefono de contacto</label>
-                        <input type="tel" id="telefono" name="telefono" pattern="3[0-9]{9}" title="Debe contener 10 digitos y empezar por 3" required>
+                        <input class="campo" type="tel" id="telefono" name="telefono" pattern="3[0-9]{9}" title="Debe contener 10 digitos y empezar por 3" required>
                     </p>
                 </fieldset>
 
@@ -72,7 +72,7 @@
 
                     <p>
                         <label for="fecha">Fecha de reserva</label>
-                        <input type="date" id="fecha" name="fecha" min="2026-11-01" max="2026-12-31" required>
+                        <input class="campo" type="date" id="fecha" name="fecha" min="2026-11-01" max="2026-12-31" required>
                     </p>
 
                     <p>Tipo de bicicleta</p>
@@ -87,7 +87,7 @@
 
                     <p>
                         <label for="plan">Plan</label>
-                        <select id="plan" name="plan" required>
+                        <select class="campo" id="plan" name="plan" required>
                             <option value="">Seleccione un plan</option>
                             <option value="plan1">1 hora</option>
                             <option value="plan2">Medio día</option>
@@ -97,12 +97,12 @@
 
                     <p>
                         <label for="nbicicletas">Número de bicicletas</label>
-                        <input type="number" id="nbicicletas" name="nbicicletas" min="1" max="6" required>
+                        <input class="campo" type="number" id="nbicicletas" name="nbicicletas" min="1" max="6" required>
                     </p>
 
                     <p>
                         <label for="recorrido">Recorrido guiado</label>
-                        <select id="recorrido" name="recorrido">
+                        <select class="campo" id="recorrido" name="recorrido">
                             <option value="">Seleccione un recorrido</option>
                             <option value="sinrecorrido">Sin recorrido</option>
                             <option value="recorrido1">Ríos y parques</option>
@@ -115,7 +115,7 @@
                         <label for="comentarios">Deja tú comentario</label>
                     </p>
                     <p>
-                        <textarea id="comentarios" name="comentarios" rows="4" cols="50" maxlength="300" placeholder="Comentarios adicionales"></textarea>
+                        <textarea class="campo" id="comentarios" name="comentarios" rows="4" cols="50" maxlength="300" placeholder="Comentarios adicionales"></textarea>
                     </p>
                 </fieldset>
 
@@ -139,6 +139,8 @@
         <h4>ruedalibre@gmail.com</h4>
         <h4>2026</h4>
     </footer>
+
+    <a class="whatsapp" href="https://wa.me/573000000000" target="_blank">WhatsApp</a>
 
 </body>
 </html>
