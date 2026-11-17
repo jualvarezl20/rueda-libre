@@ -43,55 +43,26 @@ a:focus {
     color: var(--azul-noche);
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--espacio2);
-    padding: var(--espacio2);
+.barra {
     background-color: var(--azul-noche);
+}
+
+.barra .nav-link {
     color: var(--blanco);
 }
 
-header h1 {
-    color: var(--blanco);
-}
-
-.marca {
-    display: flex;
-    align-items: center;
-    gap: var(--espacio2);
-}
-
-#menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: var(--espacio2);
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#menu a {
-    display: inline-block;
-    color: var(--blanco);
-    text-decoration: none;
-    padding: var(--espacio1) var(--espacio2);
-}
-
-#menu a.activo {
+.barra .nav-link.active {
     color: var(--naranja-pedal);
     font-weight: 600;
 }
 
-#menu a:hover,
-#menu a:focus {
+.barra .nav-link:hover,
+.barra .nav-link:focus {
     background-color: var(--verde-ruta);
     color: var(--blanco);
 }
 
-#menu a:focus {
+.barra .nav-link:focus {
     outline: 3px solid var(--naranja-pedal);
 }
 
@@ -144,40 +115,24 @@ th {
     color: var(--blanco);
 }
 
-.botonreserva,
-.whatsapp,
-button {
-    display: inline-block;
-    background-color: var(--verde-ruta);
-    color: var(--blanco);
-    padding: var(--espacio1) var(--espacio2);
-    border: none;
-    border-radius: 0.25rem;
-    text-decoration: none;
-    font-family: var(--fuente-texto);
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-button {
-    padding: var(--espacio2) var(--espacio3);
-}
-
-.botonreserva:hover,
-.botonreserva:focus,
-.whatsapp:hover,
-.whatsapp:focus,
-button:hover,
-button:focus {
-    background-color: var(--azul-noche);
-    color: var(--blanco);
-    outline: 3px solid var(--azul-noche);
-}
-
 .whatsapp {
     position: fixed;
     bottom: var(--espacio2);
     right: var(--espacio2);
+    display: inline-block;
+    background-color: var(--verde-ruta);
+    color: var(--blanco);
+    padding: var(--espacio1) var(--espacio2);
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.whatsapp:hover,
+.whatsapp:focus {
+    background-color: var(--azul-noche);
+    color: var(--blanco);
+    outline: 3px solid var(--naranja-pedal);
 }
 
 fieldset {
@@ -187,37 +142,7 @@ fieldset {
     border-radius: 0.5rem;
 }
 
-label {
-    display: block;
-    margin-bottom: var(--espacio1);
-}
-
-.opcion {
-    display: inline-block;
-    margin-right: var(--espacio2);
-}
-
-.campo {
-    width: 100%;
-    padding: var(--espacio1);
-}
-
-.campo:focus {
-    outline: 3px solid var(--azul-noche);
-    background-color: var(--blanco);
-}
-
 @media (min-width: 768px) {
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    #menu {
-        justify-content: flex-start;
-    }
-
     table {
         font-size: 1rem;
     }
