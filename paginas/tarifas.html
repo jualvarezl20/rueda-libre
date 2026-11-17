@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
   </head>
 
@@ -31,120 +32,131 @@
       </nav>
     </header>
 
-    <main>
+    <main class="container">
 
-      <h2>Tarifas según bicibleta y tiempo</h2>
+      <div class="row g-4">
 
-        <p>A continuación encontraras nuestras tarifas con su correspondinte información</p>
+        <div class="col-12 col-lg-8">
 
-        <table id="Bicicletas" border="1">
+          <h2>Tarifas según bicibleta y tiempo</h2>
 
-          <thead>
-            <tr>
-              <th>Tipo de bicicleta</th>
-              <th>1 hora</th>
-              <th>Medio día (4horas)</th>
-              <th>Día completo</th>
-            </tr>
-          </thead>
+          <p>A continuación encontraras nuestras tarifas con su correspondinte información</p>
 
-          <tbody>
-            <tr>
-              <td>Urbana</td>
-              <td>$10.000</td>
-              <td>$30.000</td>
-              <td>$50.000</td>
-            </tr>
-            <tr>
-              <td>Montaña</td>
-              <td>$15.000</td>
-              <td>$45.000</td>
-              <td>$70.000</td>
-            </tr>
-            <tr>
-              <td>Eléctrica</td>
-              <td>$25.000</td>
-              <td>$70.000</td>
-              <td>$110.000</td>
-            </tr>
-          </tbody>
-        </table>
+          <table id="Bicicletas" border="1">
 
-        <p></p>
-        <a class="botonreserva" href="reservas.html#Reservas">Reserva ya</a>
+            <thead>
+              <tr>
+                <th>Tipo de bicicleta</th>
+                <th>1 hora</th>
+                <th>Medio día (4horas)</th>
+                <th>Día completo</th>
+              </tr>
+            </thead>
 
-      <h2>Recorridos</h2>
+            <tbody>
+              <tr>
+                <td>Urbana</td>
+                <td>$10.000</td>
+                <td>$30.000</td>
+                <td>$50.000</td>
+              </tr>
+              <tr>
+                <td>Montaña</td>
+                <td>$15.000</td>
+                <td>$45.000</td>
+                <td>$70.000</td>
+              </tr>
+              <tr>
+                <td>Eléctrica</td>
+                <td>$25.000</td>
+                <td>$70.000</td>
+                <td>$110.000</td>
+              </tr>
+            </tbody>
+          </table>
 
+          <p></p>
+          <a class="botonreserva" href="reservas.html#Reservas">Reserva ya</a>
 
-        <table id="Recorridos" border="1">
+          <h2 class="mt-4">Recorridos</h2>
 
-          <thead>
-            <tr>
-              <th>Recorrido</th>
-              <th>Distancia</th>
-              <th>Duración</th>
-              <th>Nivel</th>
-              <th>Precio persona</th>
-            </tr>
-          </thead>
+          <table id="Recorridos" border="1">
 
-          <tbody>
-            <tr>
-              <td>Río y parques</td>
-              <td>12km</td>
-              <td>2h</td>
-              <td>Fácil</td>
-              <td>$45.000</td>
-            </tr>
-            <tr>
-              <td>Sabores de barrio</td>
-              <td>18km</td>
-              <td>3h</td>
-              <td>Medio</td>
-              <td>$60.000</td>
-            </tr>
-            <tr>
-              <td>Reto las palmas</td>
-              <td>25km</td>
-              <td>4h</td>
-              <td>Difícil</td>
-              <td>$85.000</td>
-            </tr>
-          </tbody>
-        </table>
+            <thead>
+              <tr>
+                <th>Recorrido</th>
+                <th>Distancia</th>
+                <th>Duración</th>
+                <th>Nivel</th>
+                <th>Precio persona</th>
+              </tr>
+            </thead>
 
-        <p>Todas las tarifas incluyen casco y candado.</p>
-        <p>Los recorridos salen sábados y domingos a las 7:00 a.m</p>
+            <tbody>
+              <tr>
+                <td>Río y parques</td>
+                <td>12km</td>
+                <td>2h</td>
+                <td>Fácil</td>
+                <td>$45.000</td>
+              </tr>
+              <tr>
+                <td>Sabores de barrio</td>
+                <td>18km</td>
+                <td>3h</td>
+                <td>Medio</td>
+                <td>$60.000</td>
+              </tr>
+              <tr>
+                <td>Reto las palmas</td>
+                <td>25km</td>
+                <td>4h</td>
+                <td>Difícil</td>
+                <td>$85.000</td>
+              </tr>
+            </tbody>
+          </table>
 
-      <h2>¿Qué llevar?</h2>
+        </div>
+
+        <aside class="col-12 col-lg-4">
+
+          <p>Todas las tarifas incluyen casco y candado.</p>
+          <p>Los recorridos salen sábados y domingos a las 7:00 a.m</p>
+
+          <h2>¿Qué llevar?</h2>
           <ul>
             <li>Ropa cómoda</li>
             <li>Agua</li>
             <li>Protector Solar</li>
             <li>Documento de identidad</li>
           </ul>
+
+        </aside>
+
+      </div>
+
     </main>
-    
 
-
-    <footer>
-        <section>
-            <h4>Rueda LIbre</h4>
-            <p>2026</p>
-        </section>
-        <section>
-            <h4>Contacto</h4>
-            <p>ruedalibre@gmail.com</p>
-        </section>
-        <section>
-            <h4>Horario</h4>
-            <p>Lunes a viernes: 7am a 7pm</p>
-            <p>Sabados, domingos y festivos: 6am a 2pm</p>
-        </section>
+    <footer class="d-flex flex-column flex-md-row justify-content-md-between gap-3 p-3">
+      <section>
+        <h4>Rueda LIbre</h4>
+        <p>2026</p>
+      </section>
+      <section>
+        <h4>Contacto</h4>
+        <p>ruedalibre@gmail.com</p>
+      </section>
+      <section>
+        <h4>Horario</h4>
+        <p>Lunes a viernes: 7am a 7pm</p>
+        <p>Sabados, domingos y festivos: 6am a 2pm</p>
+      </section>
     </footer>
 
     <a class="whatsapp" href="https://wa.me/573000000000" target="_blank">WhatsApp</a>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
   </body>
 </html>
-
