@@ -36,3 +36,11 @@ Al estrechar la ventana el encabezado junto con el menu y demas objetos se osan 
 Columnas de la flota a 1280 px: 3
 Columnas de la flota a 900 px: 3
 Columnas de la flota a 500 px:  1
+
+
+Portada: usé Grid porque tiene dos columnas  y necesito definir el ancho de cada una con fr.
+Galería de rutas: usé Grid porque son tres tarjetas del mismo ancho en filas y columnas.
+Reservas: usé Grid porque el formulario y el contacto van en proporción 2:1 con fr.
+Fila del formulario: usé Flexbox porque son solo dos campos en una línea.
+Encabezado: usé Flexbox porque solo reparte el nombre y el menú en una fila.
+Pie: usé Flexbox porque reparte tres bloques en una fila.

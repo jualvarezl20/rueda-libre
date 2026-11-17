@@ -40,7 +40,17 @@ main {
 }
 
 .portada {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--espacio3);
+    align-items: center;
     min-height: 60vh;
+}
+
+.portada img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
 }
 
 a {
@@ -151,6 +161,16 @@ footer {
     align-self: flex-start;
 }
 
+.rutas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--espacio2);
+}
+
+.rutas .tarjeta {
+    margin-bottom: 0;
+}
+
 table {
     width: 100%;
     margin-bottom: var(--espacio2);
@@ -229,4 +249,19 @@ label {
 .campo:focus {
     outline: 3px solid var(--azul-noche);
     background-color: var(--blanco);
+}
+
+.reservas {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--espacio3);
+}
+
+.fila {
+    display: flex;
+    gap: var(--espacio2);
+}
+
+.fila p {
+    flex: 1;
 }
